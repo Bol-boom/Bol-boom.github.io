@@ -3,10 +3,7 @@
 
 blue {color:blue;}
 red {color:red;}
-biao {font-size:12px;
-        color:#d0d0d0
-}
-qian {font-size:12px;
-        color:#00caca
-}
+biao {font-size:12px;color:#d0d0d0}
+qian {font-size:12px; color:#00caca}
 a {text-decoration:none}
+a:hover{color:red;｝
