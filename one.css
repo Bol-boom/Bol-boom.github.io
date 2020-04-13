@@ -1,2 +1,12 @@
+<style>
+@charset "utf-8";
+
 blue {color:blue;}
 red {color:red;}
+biao {font-size:12px;
+        color:#d0d0d0
+}
+qian {font-size:12px;
+        color:#00caca
+}
+a {text-decoration:none}
