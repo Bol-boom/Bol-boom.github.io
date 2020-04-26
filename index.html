@@ -26,14 +26,41 @@
     </div>
 </div></a><br><br><br><br><br><br><br><br><br><br><br><br>
 <audio autoplay>
-  <source src="http://music.163.com/song/media/outer/url?id=426342468.mp3" type="audio/mpeg">
+  <source src="http://music.163.com/song/media/outer/url?id=554308724.mp3" type="audio/mpeg">
   <source src="http://music.163.com/song/media/outer/url?id=443070377.mp3" type="audio/mpeg">
 </audio>
 
 
+<div id="text" style="text-align:center;"></div>
+<script>
+  let divTyping = document.getElementById('text')
+  let i = 0,
+  timer = 1,
+  str = "<b>当时明月在，曾照彩云归。</b><br><p>漫漫人生途中，总少不了寂寞，孤独，失败，<br>沮丧等一系列的负面情绪，在这些时候，我们<br>是不是该给自己一点掌声呢?给自己一点掌声<br>让自己战胜内心的怯懦；给自己一点掌声，无畏<br>的心更加的坚定。给自己一点掌声，温暖独自<br>前行的路。<br><i>加油陌生人。---来自最可爱的菠萝♥</i></p>"
+
+  function typing () {
+    if (i <= str.length) {
+      if (i%2==0){
+        a = '_'
+      }else{
+        a = '|'
+      }
+      divTyping.innerHTML = str.slice(0, i++) + a
+      timer = setTimeout(typing, 200)
+    }
+    else {
+      clearTimeout(timer)
+    }
+  }
+  typing()
+</script><br>
+
+
 
 <div style="text-align:center;">
-    <span style="font-size:12px; color:#336666"><i>今日天气唔错喔♥</i></span><br><br>
+    <span style="font-size:12px; color:#336666">
+    <i><div>今日天气唔错喔♥</div></i>
+    </span><br>
     <a href="https://github.com/Bol-boom/Bol-boom.github.io"><img src="images/github.png" height="24";width="25"; alt="github"/></a>&nbsp;
     <a href="https://weibo.com/"><img src="images/微博.png" height="24";width="25"; alt="weibo"/></a>&nbsp;
     <a href="page/1.html"><img src="images/联系人.png" height="24";width="25"; alt="关于"/></a>&nbsp;
@@ -43,7 +70,6 @@
        </p>
        <s>菠萝 版权所有</s>
 </div>
-
 
 </body>
 </html>
