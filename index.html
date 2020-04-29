@@ -7,12 +7,12 @@
 </head>
 <body>
         <div class="tou">
-           <img  style="width:45px;height:45px;margin-left:20px"
+           <img  style="width:45px;height:45px;margin-left:50px"
             src="images/logo.png" alt="logo"</a>
             <u>Bol( 菠萝 )</u>
            <div style="font-size:15px;float:right;"><br>
             <a href="index.html"target=_blank>首页</a>&nbsp;&nbsp;
-            <a href="page/1.html"target=_blank style="margin-right:20px">关于</a>
+            <a href="page/1.html"target=_blank style="margin-right:50px">关于</a>
            </div><br><br><br><br><br><br><br><br><br>
         </div>
 <div class="zhong">
@@ -26,22 +26,42 @@
         <qian><i>#笔记</i></qian>&nbsp;<qian><i>#测试</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</qian>
        </div>
     </div>
-  </div>
-  <div class="mian">
-    <h2 style="color:#000000">HTML中的基础标签用法</h2>
-    <div>
-     <img src="images/html.png" style="width:20px;height:20px;" alt="html"/>
-     <biao><i>菠萝的测试笔记</i></biao>
-       <div style="float:right;">
-        <qian><i>#笔记</i></qian>&nbsp;<qian><i>#测试</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</qian>
-       </div>
-    </div>
+    </a>
   </div>
 </div>
+
+<div class="left">
+  <div style="text-align:center;">
+    <h2>一言</h2><hr color=#666666>
+  </div>
+<div id="text"></div>
+  
+<script>
+  let divTyping = document.getElementById('text')
+  let i = 0,
+  timer = 1,
+  str = "你敢听真话吗？我带你认清现实。你现在的压力来源于你不自律，你只是在假装努力，你知道自己该干什么不该干什么，可你就是控制不住你自己。你现在的行为跟不上自己的思想，所以你恐慌焦虑。你明明知道这件事不去做的后果是什么可你就是控制不住自己这副懒惰的躯体。这感觉就好像一个人拿一把刀，你的眼睛越来越近越来越近，马上就扎到你的眼睛了，可是你宁愿干着急你连动都不想动一下，你就眼睁睁看着自己等死，所以你越来越害怕越来越惶恐。可是谁救得了你呢？                  你倒是动一下啊"
+  function typing () {
+    if (i <= str.length) {
+      if (i%2==0){
+        a = '_'
+      }else{
+        a = '|'
+      }
+      divTyping.innerHTML = str.slice(0, i++) + a
+      timer = setTimeout(typing, 200)
+    }
+    else {
+      clearTimeout(timer)
+    }
+  }
+  typing()
+</script><br>
+</div>
+
 <audio autoplay>
   <source src="http://music.163.com/song/media/outer/url?id=554308724.mp3" type="audio/mpeg">
 </audio>
-
 <div class="xia">
     <span style="font-size:12px; color:#336666">
     <i><div>今日天气唔错喔♥</div></i>
